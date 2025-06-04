@@ -25,7 +25,7 @@
  * is done automatically by firmware.
  */
 
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 
 // USB WebUSB object
 Adafruit_USBD_WebUSB usb_web;

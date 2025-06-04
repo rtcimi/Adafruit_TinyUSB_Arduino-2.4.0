@@ -16,7 +16,7 @@
 #include <Adafruit_CircuitPlayground.h>
 #include <Wire.h>
 #include <SPI.h>
-#include <Adafruit_TinyUSB.h>
+#include <Adafruit_TinyUSB_Custom.h>
 #include <MIDI.h>
 
 // USB MIDI object

@@ -9,7 +9,7 @@
  any redistribution
 *********************************************************************/
 
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 
 /* This sketch demonstrates USB CDC Serial can be dropped by simply
  * call Serial.end() within setup(). This must be called before any

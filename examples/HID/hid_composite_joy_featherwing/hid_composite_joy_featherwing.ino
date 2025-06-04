@@ -20,7 +20,7 @@
  *  - Adafruit_seesaw
  */
 
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 #include "Adafruit_seesaw.h"
 
 #define BUTTON_A  6

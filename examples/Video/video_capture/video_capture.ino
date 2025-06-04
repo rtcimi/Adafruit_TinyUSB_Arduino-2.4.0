@@ -9,7 +9,7 @@
  any redistribution
 *********************************************************************/
 
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 #include "usb_descriptors.h"
 
 //--------------------------------------------------------------------+

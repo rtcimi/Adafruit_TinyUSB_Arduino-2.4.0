@@ -27,6 +27,24 @@
 
 #include "tusb.h"
 
+#if CFG_TUH_ENABLED && CFG_TUH_MSC
+
+typedef void (*tuh_msc_mount_cb_t)(uint8_t dev_addr);
+typedef void (*tuh_msc_umount_cb_t)(uint8_t dev_addr);
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void tuh_msc_set_mount_callback(tuh_msc_mount_cb_t cb);
+void tuh_msc_set_umount_callback(tuh_msc_umount_cb_t cb);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif // CFG_TUH_ENABLED && CFG_TUH_MSC
+
 // define SdFat host helper class if SdFat library is available
 #if __has_include("SdFat.h")
 

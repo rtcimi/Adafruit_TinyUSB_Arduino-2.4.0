@@ -33,7 +33,7 @@
  *
  */
 
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 
 #ifndef USE_TINYUSB_HOST
   #error This example requires usb stack configured as host in "Tools -> USB Stack -> Adafruit TinyUSB Host"

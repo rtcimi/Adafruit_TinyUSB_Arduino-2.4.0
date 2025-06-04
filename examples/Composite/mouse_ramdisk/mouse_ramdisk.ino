@@ -14,7 +14,7 @@
  * - Press button pin will move mouse toward bottom right of monitor
  */
 
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 
 //--------------------------------------------------------------------+
 // MSC RAM Disk Config

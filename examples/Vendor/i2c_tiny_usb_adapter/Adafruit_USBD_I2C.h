@@ -25,7 +25,7 @@
 #ifndef ADAFRUIT_USBD_I2C_H_
 #define ADAFRUIT_USBD_I2C_H_
 
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 #include "Wire.h"
 
 /* commands from USB, must e.g. match command ids in kernel driver */

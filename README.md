@@ -30,7 +30,7 @@ There are 2 type of supported cores: with and without built-in support for TinyU
 
 ### Cores with built-in support
 
-Following core has TinyUSB as either the primary usb stack or selectable via menu `Tools->USB Stack`. You only need to include `<Adafruit_TinyUSB.h>` in your sketch to use.
+Following core has TinyUSB as either the primary usb stack or selectable via menu `Tools->USB Stack`. You only need to include `<Adafruit_TinyUSB_Custom.h>` in your sketch to use.
 
 - [adafruit/Adafruit_nRF52_Arduino](https://github.com/adafruit/Adafruit_nRF52_Arduino)
 - [adafruit/ArduinoCore-samd](https://github.com/adafruit/ArduinoCore-samd)

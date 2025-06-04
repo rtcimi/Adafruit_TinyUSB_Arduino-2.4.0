@@ -9,7 +9,7 @@
  any redistribution
 *********************************************************************/
 
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 
 /* This sketch demonstrates USB HID gamepad use.
  * This sketch is only valid on boards which have native USB support

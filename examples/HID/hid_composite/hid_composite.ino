@@ -9,7 +9,7 @@
  any redistribution
 *********************************************************************/
 
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 
 /* This sketch demonstrates multiple report USB HID.
  * Press button pin will move

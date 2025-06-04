@@ -12,7 +12,7 @@
 #include "SPI.h"
 #include "SdFat.h"
 #include "Adafruit_InternalFlash.h"
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 
 // Start address and size should matches value in the CircuitPython (INTERNAL_FLASH_FILESYSTEM = 1)
 // to make it easier to switch between Arduino and CircuitPython

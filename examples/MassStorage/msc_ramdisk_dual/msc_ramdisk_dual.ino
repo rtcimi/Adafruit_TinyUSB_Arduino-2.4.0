@@ -9,7 +9,7 @@
  any redistribution
 *********************************************************************/
 
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 
 // 8KB is the smallest size that windows allow to mount
 #define DISK_BLOCK_NUM  16
