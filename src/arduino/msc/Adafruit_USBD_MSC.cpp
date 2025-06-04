@@ -216,8 +216,9 @@ void tud_msc_capacity_cb(uint8_t lun, uint32_t *block_count,
 // Callback invoked when received an SCSI command not in built-in list below
 // - READ_CAPACITY10, READ_FORMAT_CAPACITY, INQUIRY, MODE_SENSE6, REQUEST_SENSE
 // - READ10 and WRITE10 has their own callbacks
-int32_t tud_msc_scsi_cb(uint8_t lun, const uint8_t scsi_cmd[16], void *buffer,
-                        uint16_t bufsize) {
+// Allow user sketches to override this callback by marking it weak
+TU_ATTR_WEAK int32_t tud_msc_scsi_cb(uint8_t lun, const uint8_t scsi_cmd[16],
+                                     void *buffer, uint16_t bufsize) {
   const void *response = NULL;
   int32_t resplen = 0;
 
