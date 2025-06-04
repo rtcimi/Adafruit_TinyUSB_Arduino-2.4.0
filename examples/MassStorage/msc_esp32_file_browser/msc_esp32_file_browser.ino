@@ -34,7 +34,7 @@
 #include "SPI.h"
 #include "SdFat.h"
 #include "Adafruit_SPIFlash.h"
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 
 #include <WiFi.h>
 #include <WiFiClient.h>

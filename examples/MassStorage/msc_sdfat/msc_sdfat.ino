@@ -15,7 +15,7 @@
 
 #include "SPI.h"
 #include "SdFat.h"
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 
 const int chipSelect = 10;
 

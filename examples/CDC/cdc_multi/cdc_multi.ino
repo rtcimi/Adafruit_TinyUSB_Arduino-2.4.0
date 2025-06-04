@@ -23,7 +23,7 @@
  *  We would implement this later when we could.
  */
 
-#include <Adafruit_TinyUSB.h>
+#include <Adafruit_TinyUSB_Custom.h>
 
 #define LED LED_BUILTIN
 

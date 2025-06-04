@@ -34,6 +34,22 @@
 #include "Adafruit_USBH_MSC.h"
 #include "tusb.h"
 
+static tuh_msc_mount_cb_t _mount_cb = nullptr;
+static tuh_msc_umount_cb_t _umount_cb = nullptr;
+
+void tuh_msc_set_mount_callback(tuh_msc_mount_cb_t cb) { _mount_cb = cb; }
+void tuh_msc_set_umount_callback(tuh_msc_umount_cb_t cb) { _umount_cb = cb; }
+
+TU_ATTR_WEAK void tuh_msc_mount_cb(uint8_t dev_addr) {
+  if (_mount_cb)
+    _mount_cb(dev_addr);
+}
+
+TU_ATTR_WEAK void tuh_msc_umount_cb(uint8_t dev_addr) {
+  if (_umount_cb)
+    _umount_cb(dev_addr);
+}
+
 #if __has_include("SdFat.h")
 
 Adafruit_USBH_MSC_BlockDevice::Adafruit_USBH_MSC_BlockDevice() {

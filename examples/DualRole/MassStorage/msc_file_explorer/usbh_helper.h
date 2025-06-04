@@ -31,7 +31,7 @@
   #endif
 #endif // ARDUINO_ARCH_RP2040
 
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 
 #if defined(CFG_TUH_MAX3421) && CFG_TUH_MAX3421
   // USB Host using MAX3421E: SPI, CS, INT

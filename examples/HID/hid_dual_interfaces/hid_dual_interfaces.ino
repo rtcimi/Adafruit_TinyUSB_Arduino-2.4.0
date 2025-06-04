@@ -9,7 +9,7 @@
  any redistribution
 *********************************************************************/
 
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 
 /* This sketch demonstrates multiple USB HID interfaces. Pressing the button will
  * - mouse toward bottom right of monitor

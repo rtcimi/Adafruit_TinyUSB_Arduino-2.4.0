@@ -22,8 +22,8 @@
  * THE SOFTWARE.
  */
 
-#ifndef ADAFRUIT_TINYUSB_H_
-#define ADAFRUIT_TINYUSB_H_
+#ifndef ADAFRUIT_TINYUSB_CUSTOM_H_
+#define ADAFRUIT_TINYUSB_CUSTOM_H_
 
 // Error message for Core that must select TinyUSB via menu
 #if !defined(USE_TINYUSB) &&                                                   \
@@ -89,4 +89,4 @@ void TinyUSB_Device_Init(uint8_t rhport);
 
 #endif
 
-#endif /* ADAFRUIT_TINYUSB_H_ */
+#endif /* ADAFRUIT_TINYUSB_CUSTOM_H_ */

@@ -10,7 +10,7 @@
 *********************************************************************/
 
 #include <Wire.h>
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 
 #include "Adafruit_USBD_I2C.h"
 

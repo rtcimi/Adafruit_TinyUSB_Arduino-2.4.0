@@ -27,7 +27,7 @@
 // ESP32 will use the arduino-esp32 core initialization and Serial
 #if CFG_TUD_ENABLED && !defined(ARDUINO_ARCH_ESP32)
 
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 #include "Arduino.h"
 
 //--------------------------------------------------------------------+

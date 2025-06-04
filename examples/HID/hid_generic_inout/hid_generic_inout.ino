@@ -35,7 +35,7 @@
  *   $ python3 hid_test.py
  */
 
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 
 // HID report descriptor using TinyUSB's template
 // Generic In Out with 64 bytes report (max)

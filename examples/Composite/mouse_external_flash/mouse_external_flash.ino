@@ -17,7 +17,7 @@
 #include "SPI.h"
 #include "SdFat.h"
 #include "Adafruit_SPIFlash.h"
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 
 //--------------------------------------------------------------------+
 // MSC External Flash Config

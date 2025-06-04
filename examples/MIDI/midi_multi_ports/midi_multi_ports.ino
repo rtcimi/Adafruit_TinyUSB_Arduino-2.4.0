@@ -13,7 +13,7 @@
 // and how to set their name
 
 #include <Arduino.h>
-#include <Adafruit_TinyUSB.h>
+#include <Adafruit_TinyUSB_Custom.h>
 #include <MIDI.h>
 
 // USB MIDI object with 3 ports

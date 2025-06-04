@@ -38,7 +38,7 @@
         bNumConfigurations  1
  *
  */
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 #include "SPI.h"
 
 // USB Host using MAX3421E: SPI, CS, INT

@@ -9,7 +9,7 @@
  any redistribution
 *********************************************************************/
 
-#include "Adafruit_TinyUSB.h"
+#include "Adafruit_TinyUSB_Custom.h"
 #include <Adafruit_NeoPixel.h>
 
 /* This sketch demonstrates USB HID keyboard.
