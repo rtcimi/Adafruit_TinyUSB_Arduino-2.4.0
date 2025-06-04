@@ -147,6 +147,14 @@ void tud_msc_capacity_cb(uint8_t lun, uint32_t *block_count,
 TU_ATTR_WEAK int32_t tud_msc_scsi_cb(uint8_t lun, uint8_t const scsi_cmd[16],
                                      void *buffer, uint16_t bufsize);
 
+// Invoked when a valid SCSI command is received (before data stage).
+// This can be used to inspect or log the command. `dir_in` indicates
+// device-to-host transfers and `total_bytes` is the expected length.
+TU_ATTR_WEAK void tud_msc_scsi_cmd_start_cb(uint8_t lun,
+                                            uint8_t const scsi_cmd[16],
+                                            bool dir_in,
+                                            uint32_t total_bytes);
+
 /*------------- Optional callbacks -------------*/
 
 // Invoked when received GET_MAX_LUN request, required for multiple LUNs

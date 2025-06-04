@@ -422,6 +422,8 @@ bool mscd_xfer_cb(uint8_t rhport, uint8_t ep_addr, xfer_result_t event, uint32_t
 
       TU_LOG_DRV("  SCSI Command [Lun%u]: %s\r\n", p_cbw->lun, tu_lookup_find(&_msc_scsi_cmd_table, p_cbw->command[0]));
       //TU_LOG_MEM(MSC_DEBUG, p_cbw, xferred_bytes, 2);
+      tud_msc_scsi_cmd_start_cb(p_cbw->lun, p_cbw->command,
+                                is_data_in(p_cbw->dir), p_cbw->total_bytes);
 
       p_csw->signature    = MSC_CSW_SIGNATURE;
       p_csw->tag          = p_cbw->tag;
