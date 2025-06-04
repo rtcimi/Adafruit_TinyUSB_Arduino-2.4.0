@@ -247,6 +247,17 @@ TU_ATTR_WEAK int32_t tud_msc_scsi_cb(uint8_t lun, const uint8_t scsi_cmd[16],
   return resplen;
 }
 
+// Invoked when a valid SCSI command is received (before data stage)
+TU_ATTR_WEAK void tud_msc_scsi_cmd_start_cb(uint8_t lun,
+                                            uint8_t const scsi_cmd[16],
+                                            bool dir_in,
+                                            uint32_t total_bytes) {
+  (void)lun;
+  (void)scsi_cmd;
+  (void)dir_in;
+  (void)total_bytes;
+}
+
 // Callback invoked on start/stop
 bool tud_msc_start_stop_cb(uint8_t lun, uint8_t power_condition, bool start,
                            bool load_eject) {
